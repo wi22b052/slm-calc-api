@@ -14,4 +14,10 @@ public class CalculatorController {
                    @RequestParam int b){
         return a +b;
     }
+
+    @RequestMapping("/calc/subtract")
+    public int subtract(@RequestParam int a,
+                   @RequestParam int b){
+        return a -b;
+    }
 }
